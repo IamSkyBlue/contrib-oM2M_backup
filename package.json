@@ -23,7 +23,9 @@
             "oM2M-ONE-Descriptor-Container": "oM2M-ONE-Descriptor-Container.js",
             "oM2M-ONE-Descriptor-ContentInstance": "oM2M-ONE-Descriptor-ContentInstance.js",
             "oM2M-ONE-Subscription": "oM2M-ONE-Subscription.js",
-            "oM2M-ONE-Application": "oM2M-ONE-Application.js"
+            "oM2M-ONE-Application": "oM2M-ONE-Application.js",
+            "NM": "NM.js",
+            "xN-CSE": "xN-CSE.js"
         }
     }
 }
