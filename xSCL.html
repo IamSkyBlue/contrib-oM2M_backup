@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('xSCL',{
+        category: 'config',
+        defaults: {
+            sclId: {value: "", required:true },
+            host: { value:"localhost", required:true },
+            port: { value:8080, required:true,validate:RED.validators.number() },
+            baseUrl: { value:"/om2m/", required:true }
+        },
+        label: function() {
+            return "http://" + this.host + ":" + this.port;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="xSCL">
+    <div class="form-row">
+        <label for="node-config-input-sclId"><i class="icon-bookmark"></i> xSCL Id</label>
+        <input type="text" id="node-config-input-sclId">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-host"><i class="icon-bookmark"></i> Host</label>
+        <input type="text" id="node-config-input-host">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-port"><i class="icon-bookmark"></i> Port</label>
+        <input type="text" id="node-config-input-port">
+    </div>
+	    <div class="form-row">
+        <label for="node-config-input-baseUrl"><i class="icon-bookmark"></i> Base URL</label>
+        <input type="text" id="node-config-input-baseUrl">
+    </div>
+</script>

@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-ONE-Data-ContentInstance',{
+        category: 'function',
+        color: '#dab3ff',
+        defaults: {
+            xN_CSE: { value:"", type: "xN_CSE"},
+            NM: { value:"", type: "NM"},
+            obixCategory: { value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "oneM2M Data-ContentInstance"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-ONE-Data-ContentInstance">
+    <div class="form-row">
+        <label for="node-input-xN_CSE"><i class="icon-tag"></i> xN_CSE</label>
+        <input type="text" id="node-input-xN_CSE">
+    </div>
+    <div class="form-row">
+        <label for="node-input-NM"><i class="icon-tag"></i> NM</label>
+        <input type="text" id="node-input-NM">
+    </div>
+	<div class="form-row">
+        <label for="node-input-obixCategory"><i class="icon-tag"></i> Category</label>
+        <input type="text" id="node-input-obixCategory" placeholder="Category">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-ONE-Data-ContentInstance">
+    <p>A node to push application's data (a.k.a. Content Instance) @ Data Container </p>
+</script>

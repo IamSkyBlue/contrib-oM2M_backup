@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-ONE-Descriptor-Container',{
+        category: 'function',
+        color: '#dab3ff',
+        defaults: {
+            xN_CSE: { value:"", type: "xN_CSE"},
+            NM: { value:"", type: "NM"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "oneM2M Descriptor-Container"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-ONE-Descriptor-Container">
+    <div class="form-row">
+        <label for="node-input-xN_CSE"><i class="icon-tag"></i> xN_CSE</label>
+        <input type="text" id="node-input-xN_CSE">
+    </div>
+    <div class="form-row">
+        <label for="node-input-NM"><i class="icon-tag"></i> NM</label>
+        <input type="text" id="node-input-NM">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-ONE-Descriptor-Container">
+    <p>A node to register a Descriptor Container with OM2M </p>
+</script>

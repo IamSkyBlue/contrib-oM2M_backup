@@ -1,0 +1,29 @@
+{
+    "name": "node-red-contrib-OM2M",
+    "version": "0.0.8",
+    "description": "A set of nodes to interface node-red with OM2M",
+    "private": true,
+    "dependencies": {},
+    "keywords": [
+        "node-red",
+        "OM2M"
+    ],
+    "node-red": {
+        "nodes": {
+            "xSCL": "xSCL.js",
+            "xA": "xA.js",
+            "oM2M-Application": "oM2M-Application.js",
+            "oM2M-Descriptor-Container": "oM2M-Descriptor-Container.js",
+            "oM2M-Data-Container": "oM2M-Data-Container.js",
+            "oM2M-Descriptor-ContentInstance": "oM2M-Descriptor-ContentInstance.js",
+            "oM2M-Data-ContentInstance": "oM2M-Data-ContentInstance.js",
+            "oM2M-Subscription": "oM2M-Subscription.js",
+            "oM2M-ONE-Data-Container": "oM2M-ONE-Data-Container.js",
+            "oM2M-ONE-Data-ContentInstance": "oM2M-ONE-Data-ContentInstance.js",
+            "oM2M-ONE-Descriptor-Container": "oM2M-ONE-Descriptor-Container.js",
+            "oM2M-ONE-Descriptor-ContentInstance": "oM2M-ONE-Descriptor-ContentInstance.js",
+            "oM2M-ONE-Subscription": "oM2M-ONE-Subscription.js",
+            "oM2M-ONE-Application": "oM2M-ONE-Application.js"
+        }
+    }
+}

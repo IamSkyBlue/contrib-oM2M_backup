@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    RED.nodes.registerType('xA',{
+        category: 'config',
+        defaults: {
+            appId: { value:"", required:true },
+            contactUrl: { value:"localhost:1880", required:true }
+        },
+        label: function() {
+            return this.appId;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="xA">
+    <div class="form-row">
+        <label for="node-config-input-appId"><i class="icon-bookmark"></i> AppID</label>
+        <input type="text" id="node-config-input-appId">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-contactUrl"><i class="icon-bookmark"></i> Contact Url</label>
+        <input type="text" id="node-config-input-contactUrl">
+    </div>
+</script>

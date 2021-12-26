@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-Data-Container',{
+        category: 'function',
+        color: '#3FADB5',
+        defaults: {
+            xSCL: { value:"", type: "xSCL"},
+            xA: { value:"", type: "xA"},
+            maxNrOfInstances: { value: "", validate:RED.validators.number()},
+            obixAnnounce: { value: false}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "Data-Container"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-Data-Container">
+    <div class="form-row">
+        <label for="node-input-xSCL"><i class="icon-tag"></i> xSCL</label>
+        <input type="text" id="node-input-xSCL">
+    </div>
+    <div class="form-row">
+        <label for="node-input-xA"><i class="icon-tag"></i> xA</label>
+        <input type="text" id="node-input-xA">
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxNrOfInstances"><i class="icon-tag"></i> Max Content Instances</label>
+        <input type="text" id="node-input-maxNrOfInstances" placeholder="10">
+    </div>
+    <div class="form-row">
+        <label for="node-input-obixAnnounce"><i class="icon-tag"></i> Announce</label>
+        <input type="checkbox" id="node-input-obixAnnounce" placeholder="Announce" style="{text-align:left;}">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-Data-Container">
+    <p>A node to register a Data Container with OM2M </p>
+</script>

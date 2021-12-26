@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-Descriptor-ContentInstance',{
+        category: 'function',
+        color: '#3FADB5',
+        defaults: {
+            xSCL: { value:"", type: "xSCL"},
+            xA: { value:"", type: "xA"},
+			obixType: { value: ""},
+			obixLocation: { value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "Descriptor-ContentInstance"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-Descriptor-ContentInstance">
+    <div class="form-row">
+        <label for="node-input-xSCL"><i class="icon-tag"></i> xSCL</label>
+        <input type="text" id="node-input-xSCL">
+    </div>
+    <div class="form-row">
+        <label for="node-input-xA"><i class="icon-tag"></i> xA</label>
+        <input type="text" id="node-input-xA">
+    </div>
+	<div class="form-row">
+        <label for="node-input-obixType"><i class="icon-tag"></i> Type</label>
+        <input type="text" id="node-input-obixType" placeholder="Type">
+    </div>
+	<div class="form-row">
+        <label for="node-input-obixLocation"><i class="icon-tag"></i> Location</label>
+        <input type="text" id="node-input-obixLocation" placeholder="Location">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-Descriptor-ContentInstance">
+    <p>A node to set application's data metadata @ Descriptor Container </p>
+</script>

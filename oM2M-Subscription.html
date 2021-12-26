@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-Subscription',{
+        category: 'function',
+        color: '#3FADB5',
+        defaults: {
+            xSCL: { value:"", type: "xSCL"},
+            xA: { value:"", type: "xA"},
+			contactPath: { value: "/data", required: true},
+            filterType: { value: ""},
+            filterCriteria: { value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "Subscription"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-Subscription">
+    <div class="form-row">
+        <label for="node-input-xSCL"><i class="icon-tag"></i> xSCL</label>
+        <input type="text" id="node-input-xSCL">
+    </div>
+    <div class="form-row">
+        <label for="node-input-xA"><i class="icon-tag"></i> xA</label>
+        <input type="text" id="node-input-xA">
+    </div>
+	<div class="form-row">
+        <label for="node-input-contactPath"><i class="icon-tag"></i> Contact Path</label>
+        <input type="text" id="node-input-contactPath" placeholder="Contact Path">
+    </div>
+        <div class="form-row">
+        <label for="node-select-filterType"><i class="icon-tag"></i> Filter Type</label>
+        <select id="node-select-filterCriteria" placeholder="Filter Type">
+            <option value="ifModifiedSince">Modified Since</option>
+            <option value="ifUnmodifiedSince">Unmodified Since</option>
+            <option value="ifMatch">Match</option>
+            <option value="ifNoneMatch">None Match</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-filterCriteria"><i class="icon-tag"></i> Filter Criteria</label>
+        <input type="text" id="node-input-filterCriteria" placeholder="Filter Criteria">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-Subscription">
+    <p>A node to define a new OM2M Subscription </p>
+</script>

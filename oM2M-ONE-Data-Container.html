@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oM2M-ONE-Data-Container',{
+        category: 'function',
+        color: '#dab3ff',
+        defaults: {
+            xN_CSE: { value:"", type: "xN_CSE"},
+            NM: { value:"", type: "NM"},
+            maxNrOfInstances: { value: "", validate:RED.validators.number()},
+            obiNMnnounce: { value: false}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "oneM2M Data-Container"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="oM2M-ONE-Data-Container">
+    <div class="form-row">
+        <label for="node-input-xN_CSE"><i class="icon-tag"></i> xN_CSE</label>
+        <input type="text" id="node-input-xN_CSE">
+    </div>
+    <div class="form-row">
+        <label for="node-input-NM"><i class="icon-tag"></i> NM</label>
+        <input type="text" id="node-input-NM">
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxNrOfInstances"><i class="icon-tag"></i> Max Content Instances</label>
+        <input type="text" id="node-input-maxNrOfInstances" placeholder="10">
+    </div>
+    <div class="form-row">
+        <label for="node-input-obiNMnnounce"><i class="icon-tag"></i> Announce</label>
+        <input type="checkbox" id="node-input-obiNMnnounce" placeholder="Announce" style="{text-align:left;}">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="oM2M-ONE-Data-Container">
+    <p>A node to register a Data Container with OM2M </p>
+</script>
